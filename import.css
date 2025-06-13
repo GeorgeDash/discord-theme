@@ -8,14 +8,22 @@ body{
 
 /* Custom properties */
 @property --align-titlebar{
-    syntax: "off | left";
-    initial-value: "left";
+    syntax: "off | hide | left";
+    inherits: false;
+    initial-value: left;
 }
 
-/* Applying customizations */
+/* Applying customizations: */
+/* --align-titlebar */
 @container root style(--align-titlebar: left){
     .visual-refresh .title_c38106{
-        justify-content: flex-start;
-        padding-inline-start: var(--titlebar-padding);
+        justify-content: flex-start !important;
+        padding-inline-start: var(--titlebar-padding, 12px) !important;
+    }
+}
+
+@container root style(--align-titlebar: hide){
+    .visual-refresh .title_c38106{
+        display: none !important;
     }
 }
