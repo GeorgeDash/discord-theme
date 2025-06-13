@@ -1,8 +1,12 @@
 /**
- * @name MyTheme
- * @author YourName
- * @description Describe the aesthetic. Maybe a support server link.
+ * @name test
+ * @author GeorgeDash
+ * @description My first ever Discord theme!
  * @version 0.0.1
  */
 
 @import url("https://georgedash.github.io/discord-theme/import.css");
+
+:root{
+    --align-titlebar: off;
+}
