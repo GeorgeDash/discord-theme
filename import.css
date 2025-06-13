@@ -1,0 +1,13 @@
+:root{
+    container-name: root;
+}
+body{
+    container-name: body;
+}
+
+@container root style(--align-titlebar: left){
+    .visual-refresh .title_c38106{
+        justify-content: flex-start;
+        padding-inline-start: var(--titlebar-padding);
+    }
+}

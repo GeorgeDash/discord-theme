@@ -1,11 +1,8 @@
 /**
- * @name test
- * @author GeorgeDash
- * @description My first Discord theme ever!
+ * @name MyTheme
+ * @author YourName
+ * @description Describe the aesthetic. Maybe a support server link.
  * @version 0.0.1
  */
 
-.title_c38106{
-    justify-content: flex-start;
-    padding-inline-start: 1rem;
-}
+@import url("https://georgedash.github.io/discord-theme/import.css");
