@@ -13,17 +13,31 @@ body{
     initial-value: left;
 }
 
+@property --old-status{
+    syntax: "off | on";
+    inherits: false;
+    initial-value: off;
+}
+
 /* Applying customizations: */
 /* --align-titlebar */
-@container root style(--align-titlebar: left){
+@container body style(--align-titlebar: left){
     .visual-refresh .title_c38106{
         justify-content: flex-start !important;
         padding-inline-start: var(--titlebar-padding, 12px) !important;
     }
 }
 
-@container root style(--align-titlebar: hide){
+@container body style(--align-titlebar: hide){
     .visual-refresh .title_c38106{
         display: none !important;
+    }
+}
+
+
+/* --old-status */
+@container body style(--old-status: on){
+    .visual-refresh rect.pointerEvents__44b0c:not([mask="url(#svg-mask-status-online)"]){
+        mask: url("#svg-mask-status-online") !important;
     }
 }
